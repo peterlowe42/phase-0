@@ -45,3 +45,15 @@ This was a great exercise for me because I've never really attempted to use the 
     help - can be used to get help on how to use unfamiliar commands 
 
 ### 1.3 Forking and Cloning Reflection 
+
+Creating a new repository in GitHub couldn't be easier.  Simply log-on to your github account, click on the + button next to your username in the top right corner and select 'New repository'.  This will bring up a simple form to give your repository a name, set it as public or private and add a licence.  Once you've filled this out click the create repository button at the bottom and your repository will be created.
+
+You can also 'fork' an existing repository.  This simply makes a copy of a repository from another account and puts it in yours.   To do this open the repository you want to folk and click the folk button.  You now have your very own version of this repository in your account to play with as you see fit.  
+
+So why clone a repository? why not just make a new one? There are a couple of reasons. Maybe your working on a joint project and need to work on files from a repository belonging to one of your partners  without compromising the original. Or maybe your working on something for yourself but someone else has already done a lot of the ground work.  Why create all those files again when you can simply 'fork' them from an existing repository.  After all nobody wants to do unnecessary work.
+
+Before you work on files from a GitHub repository you'll need to 'clone' them to your own computer.  This is also very simple to do.  Open the repository in GitHub and you'll find a small box on the right labeled 'HTTPS clone URL'  copy the context of this box.  Next open your command line and navigate to the directory where you want the clone to go using the 'cd' command.  Then simply type 'git clone ' paste the URL you just copied and hit enter.  It's that simple.
+
+ 
+
+I didn't really have any troubles setting up Git or GitHub it all went very smoothly.  The only problem I encountered was when I was asked to delete the clones I'd made and clone them again.  I encountered permissions errors when I first tried to delete them through Powershell.This is apparently a common problem on windows machines and a quick google search revealed the solution.  
