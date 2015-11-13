@@ -5,7 +5,7 @@ Tracking and adding changes provides an all important safty net for a developer.
 
 What is a commit?
 
-A commit is essentially like a save point.  When the developer alters or adds a file within a repository it is not added to the repository when they click save on sublime.  The change remains in a kind of limbo until it is commited.  If the developer is happy with the change they use the commit command to update the repository on their machine.  N.B. This does not overwrite previous commits like saving the changes to a text file. At any time the developer can check the log and roll back to any previous commit. 
+A commit is essentially like a save point.  When the developer alters or adds a file within a repository it is not added to the repository when they click save on sublime.  The change remains in a kind of limbo until it is commited.  If the developer is happy with the change they use the commit command to update the repository on their machine.  N.B. This does not overwrite previous commits. At any time the developer can check the log and roll back to any previous commit. 
 
 What are the best practices for commit messages?
 
@@ -13,11 +13,11 @@ Commit messages should start with a short capitalized sentence exlaining the bas
 
 What does the HEAD^ argument mean?
 
-HEAD^ reffers latest commit on whichever branch you are working on. HEAD is updated whenever you make a new commit or change branches.
+HEAD^ reffers latest commit on whichever branch you are working. HEAD is updated whenever you make a new commit or change branches.
 
 What are the 3 stages of a git change and how do you move a file from one stage to the other?
 
-The first stage ofany change is to make whatever file alterations you want to make. e.g. Adding a file, adding text to a file, changing a line of code etc. At this point git will recognise that a change has been made to a file but nothing is ready to be commited. 
+The first stage of any change is to make whatever file alterations you want to make. e.g. Adding a file, adding text to a file, changing a line of code etc. At this point git will recognise that a change has been made to a file but nothing is ready to be commited. 
 The next stage is to 'add' the change by typing 'git add' followed by the name of the file you changed.  This adds that file to a sort of que of changes to be commited but doesn't change the repository.
 The final stage is to commit the change with 'git commit' this will add any changes that you have added to the repository.  N.B If did not 'add' a specific change then it will not be commited.
 
@@ -32,7 +32,7 @@ git add 'file_name'
 git add . 
   - adds all current changes
 
-git commit -b "commit message"
+git commit -m "commit message"
 commits all added changes and allows you to add a short commit message in the same line.  
 
 git commit -v 
@@ -43,4 +43,4 @@ A pull request is a request for your updated files to be merged into the origin 
 
 Why are pull requests preferred when working with teams?
 
-Pull requests are used because they allow the other developers on your team to review your changes BEFORE they are merged with the rest of the project.  This is why it is considered bad practice to merge your own pull request.
+Pull requests are used because they allow the other developers on your team to review your changes BEFORE they are merged with the rest of the project.  This is why it is considered bad practice to merge your own pull request.  
