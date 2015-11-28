@@ -38,6 +38,7 @@ h1 span {
 h2
 
 ul {
+    
     -moz-column-count: 2;
     -moz-column-gap: 60px;
     -webkit-column-count: 2;
