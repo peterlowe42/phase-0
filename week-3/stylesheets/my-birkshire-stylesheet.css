@@ -38,7 +38,6 @@ h1 span {
 h2
 
 ul {
-    
     -moz-column-count: 2;
     -moz-column-gap: 60px;
     -webkit-column-count: 2;
@@ -71,3 +70,40 @@ ul {
     display:block;
     border:1px solid black;
 }
+
+/* 
+
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+There are three things you need to know. The type of file you are linking e.g. text/html, the relationship it has to 
+your html file e.g. stylesheet and the relative path from your html file to the external file. (It is important to 
+get the ralative path correct). You link the file by adding the following code to the 'head' of your html document.
+<link <link rel="stylesheet" type="text/css" href="./file.css">  
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+ The most useful tricks in this case where 'text-align:center;' for aligning the text in the header and the geico section. 
+ and using line-height to adjust the vertiacl spacing in the header.  We also used columb-count to split the unordered 
+ list into two columbs. 
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+There wasn't anything too complex in this case we just used simple things like 'font-size' 'color' and 'font-wieght'. 
+The most complex thing we did with the element syles was setting the a:visited { } criterior which sets the properties of links that have 
+been visited. 
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+Yes we added a class for 'text' in order to change the color of all the text on the page.  We also added several divs with ids for the links
+the gieco section and the contact info.  We used ids for the latter three rather than a class because there was only one of each div type on 
+the page.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+I think some aspects of our code are closer to best practices than the scorce code for the actual site but mostly thiers is better.  We used
+hearder and footer tags where as the header and footer in the scouce code are in p tags which is not considered best practice.  
+the other thing the scource code does that is not ideal is defining font sizes in the HTML rather than the css.  We defined all our font sizes
+and styles in the css and used span tags for the B and H in the title.  
+The scource code used a table rather than an unorderd list seperated into columbs.  This is a more elegant solution that we probalbly should 
+have thought of.
+*/ 
