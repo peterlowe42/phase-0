@@ -64,3 +64,10 @@ Minutes in a decade
 
  The challenge was very simple. I think I spent more time making the files and going through git workflow to get them online than i did writing or researching the code. The only thing I needed to look up was how to convert an integer to a float and because ruby is so intuative I could have guessed and got the same result.
 
+##Links 
+
+https://github.com/peterlowe42/phase-0/blob/master/week-4/basic-math.rb
+
+https://github.com/peterlowe42/phase-0/blob/master/week-4/defining-variables.rb
+
+https://github.com/peterlowe42/phase-0/blob/master/week-4/simple-string.rb
