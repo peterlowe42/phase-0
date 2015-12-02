@@ -25,6 +25,8 @@ def smallest_integer(list_of_nums)
 end
 =end
 
+#Refactored version using built in .min method
+
 def smallest_integer(list_of_nums)
   return list_of_nums.min
 end
