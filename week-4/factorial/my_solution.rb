@@ -1,6 +1,6 @@
 # Factorial
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [with:Michal ].
 =begin
 create new variable num equal to input-1
 multiply input by num
