@@ -48,3 +48,32 @@ def separate_comma(num)
 end
 
 # 3. Reflection
+=begin
+What was your process for breaking the problem down? What different approaches did you consider?
+
+ I considered the input and output then tried to think about the individual steps that needed to be taken to go from
+ one to the other.  I initialy considered using .split to split the initial string into an array but decided this was 
+ not really nececary as I could just use .insert to put commas directly into the string. I also considered reversing the string
+ so I could add the commas from left to right rather than having to start from the end and work backwards.  I decided this
+ would add two extra steps and was not really worth it. 
+
+Was your pseudocode effective in helping you build a successful initial solution?
+
+  Yes I follwed the steps from my pseudocode almost exactly to produce my initial solution.
+
+What new Ruby method(s) did you use when refactoring your solution? Describe your experience of using the Ruby documentation to implement it/them (any difficulties, etc.). Did it/they significantly change the way your code works? If so, how?
+  
+  I spent quite a long time looking through the ruby docs to find new methods that might help but I did not find any thet 
+  I thought would help without compleatly changing how the program works. For now I'm moving on to the next exercise but if i have time at the end of this week I will
+  come back and see if I can implement some new methods by using a different approach to the problem. 
+
+How did you initially iterate through the data structure?
+
+  I used a while loop. I considered using .each but I couldn't figure out how to make this work with .insert as it requires 
+  the index number of the position where you want to insert a charachter. 
+
+Do you feel your refactored solution is more readable than your initial solution? Why?
+
+  Because I was unable to find a new method the refactored version is very similar to the initial solutoin. All I really did
+  was remove a redundent return line.  I think this does make it a little easier to read. 
+=end
