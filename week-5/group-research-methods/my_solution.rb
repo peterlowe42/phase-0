@@ -63,7 +63,7 @@ end
 # the block evaluates to true.  The deletion occurs instantly every time the block is called rather than at the 
 # end of the iteration.  
 # In the array method I also used .include? which evaluates weather an odject includes a specifed substring or value. 
-# I also used .to_s before calling .include to convert any integer values to strings (.include cannot be called on fixnums)
+# I also used .to_s before calling .include to convert any integer elements to strings (.include cannot be called on fixnums)
 
 # Person 5
 def my_array_splitting_method(source)
