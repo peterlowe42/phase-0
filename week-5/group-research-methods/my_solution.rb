@@ -49,7 +49,7 @@ end
 #
 
 
-# Person 4
+# Person 4 - Peter lowe
 def my_array_deletion_method!(source, thing_to_delete)
   source.delete_if {|x| x.to_s.include?(thing_to_delete)}
 end
@@ -58,12 +58,12 @@ def my_hash_deletion_method!(source, thing_to_delete)
   source.delete_if { |key,value| key == thing_to_delete }
 end
 
-puts my_array_deletion_method!(i_want_pets, "a")
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
-
+# I used .delete_if for both solutions.  This method is followed by a block and deletes any element for which 
+# the block evaluates to true.  The deletion occurs instantly every time the block is called rather than at the 
+# end of the iteration.  
+# In the array method I also used .include? which evaluates weather an odject includes a specifed substring or value. 
+# I also used .to_s before calling .include to convert any integer values to strings (.include cannot be called on fixnums)
 
 # Person 5
 def my_array_splitting_method(source)
