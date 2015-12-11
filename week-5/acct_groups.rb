@@ -9,7 +9,7 @@ Pseudocode
 - Iterate over array and split it at every 5th person.
 - check the length of the last group in new array. 
 - If last group is less than 4 remove one person several other groups and add them to last. 
-- Iterate over new array of arrays(acct groups) and assign each one in tern to a new hash called acct_groups.
+- Iterate over new array of arrays(acct groups) and assign each one in tern to a new hash called groups.
 - Name each new key in the hash "Accountability Group n" where n increases with each iteration. 
 - Print hash to screen in format
    Accountability group n:
