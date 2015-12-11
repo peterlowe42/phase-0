@@ -51,7 +51,7 @@ def pad(array, min_size, value = nil)
 end
 
 
-p pad([1,2,3], 2)
+
 
 # 3. Refactored Solution
 def pad!(array, min_size, value = nil) #destructive
