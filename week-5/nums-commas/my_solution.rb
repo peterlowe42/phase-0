@@ -27,7 +27,7 @@ def separate_comma(num)
 		while i > 0
           str = str.insert(i,',')
           i -= 3
-      end
+    end
       return str
 	end
 end
@@ -42,7 +42,7 @@ def separate_comma(num)
 		while i > 0
           str = str.insert(i,',')
           i -= 3
-      end
+    end
  	end
  	return str
 end
