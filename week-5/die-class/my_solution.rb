@@ -69,7 +69,7 @@ What new Ruby methods did you implement? What challenges and successes did you h
 
 What is a Ruby class?
 
-  A rubt class is a 'type' of ruby object. For example String, Array and Hash are all ruby classes. 
+  A ruby class is a 'type' of ruby object. For example String, Array and Hash are all ruby classes. 
 
 Why would you use a Ruby class?
 
