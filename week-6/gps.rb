@@ -34,3 +34,20 @@ p batch_calc("cookie", 10)
 # p batch_calc("THIS IS AN ERROR", 5)
 
 #  Reflection
+# What did you learn about making code readable by working on this challenge?
+
+#   I learned about the inmportance of good variable names.  Naming variables in a way that makes it obvious what they are for makes it much easier for an outsider
+#   to understand what your code is doing. 
+
+# Did you learn any new methods? What did you learn about them?
+
+#   I did not learn any new methods
+
+# What did you learn about accessing data in hashes? 
+
+#   Nothing I didn't already know.
+
+# What concepts were solidified when working through this challenge?
+ 
+#   The main thing that was solidified was the process of refactoring. I've done a lot of refactoring before but never really had a specific process for it.  Our guide 
+#   was really helpful in explaining the steps needed for good refactoring.  
