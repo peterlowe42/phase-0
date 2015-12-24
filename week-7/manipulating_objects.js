@@ -11,13 +11,31 @@ var terah = {
   height: 66,
   weight: 130,
   hairColor: "brown",
-  eyeColor: "brown"
+  eyeColor: "brown",
 }
 // __________________________________________
 // Write your code below.
+var adam = {
+  name: "Adam",
+  spouse: terah,
+  children: terah["children"]
+};
 
 
-
+terah["spouse"] = adam;
+terah["weight"] = 125;
+delete terah.eyeColor;
+terah["children"] = { 
+  carson: {
+    name: "Carson",
+  },
+  carter: {
+    name: "Carter"
+  },
+  colton: {
+    name: "Colton"
+  }
+  };
 
 
 
