@@ -27,31 +27,3 @@ class Profile
 
 end
 
-instance_of_profile = Profile.new
-puts "--- printing age -----"
-sleep 0.8
-p instance_of_profile.age
-
-puts "--- printing name ----"
-sleep 0.8
-p instance_of_profile.name
-
-puts "--- printing occupation ----"
-sleep 0.8
-p instance_of_profile.occupation
-
-puts "--- changing profile information ----"
-10.times do
-  print "."
-  sleep 0.1
-end
-
-instance_of_profile.age = 28
-instance_of_profile.name = "Taylor"
-instance_of_profile.occupation = "Rare Coins Trader"
-
-
-puts
-puts "---- printing all profile info -----"
-sleep 0.8
-instance_of_profile.print_info
