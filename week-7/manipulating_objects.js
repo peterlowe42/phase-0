@@ -11,15 +11,33 @@ var terah = {
   height: 66,
   weight: 130,
   hairColor: "brown",
-  eyeColor: "brown"
+  eyeColor: "brown",
 }
 // __________________________________________
 // Write your code below.
+var adam = {
+  name: "Adam",
+};
 
 
 
+terah["spouse"] = adam;
+terah["weight"] = 125;
+delete terah.eyeColor;
+terah["children"] = { 
+  carson: {
+    name: "Carson",
+  },
+  carter: {
+    name: "Carter"
+  },
+  colton: {
+    name: "Colton"
+  }
+  };
 
-
+adam["children"] = terah["children"];
+adam["spouse"] = terah;
 
 
 
@@ -28,14 +46,16 @@ var terah = {
 
 // __________________________________________
 // Reflection: Use the reflection guidelines
+// What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+//  I had a little trouble initialy defining terahs spouse because I did not inclube qoutes around the worb spouse. Adding quotes 
+//  corrected this.  I also had trouble adding adams spouse property.  I tried to define it within the adam object but this did not work so
+//  I defined it outside the object instead and the test passed.  I'm not sure why it didn't work inside. 
 //
+//How difficult was it to add and delete properties outside of the object itself?
+//  It was pretty easy once I got the syntax right. 
 //
-//
-//
-//
-//
-
-
+//What did you learn about manipulating objects in this challenge?
+//  Odjects can be manipulated very easily from outside of the object. 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
 function assert(test, message, test_number) {

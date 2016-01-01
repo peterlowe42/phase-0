@@ -69,8 +69,8 @@ function min(a,b) {
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
 
 var me = {
-	name: "Peter Lowe"
-	age: 30
-	favoriteFoods = ["Pizza", "Lasagna", "Burgers"]
+	name: "Peter Lowe",
+	age: 30,
+	favoriteFoods = ["Pizza", "Lasagna", "Burgers"],
 	quirk: "I do not consider cucumbers to be food"
 };
