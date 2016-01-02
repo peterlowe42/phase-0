@@ -42,16 +42,15 @@ var board = {
 }
 
 var small_ship = {
-	bow:["a",1],
-	stern:["a",2],
+	pos:[["A",1],["B",2]],
 	hit_count:0,
 	sunk: false,
 }
 
 var big_ship = {
-	bow:["b",3],
-	mid:["c",3],
-	stern:["d",3],
+	pos:[['B',3],['C',3],['D',3]],
+	hit_count:0,
+	sunk:false,
 }
 
 function print_board(board){
@@ -61,7 +60,8 @@ function print_board(board){
 print_board(board)
 
 function guess(guess){
-	if (guess == small_ship["bow"] || guess == small_ship["stern"]);{
+	console.log(small_ship["pos"])
+	if (small_ship["pos"].includes(guess));{
 		console.log("Hit!");
 		small_ship["hit_count"] ++;
 	    board[guess[0]][guess[1]] = "X";
@@ -77,8 +77,8 @@ function guess(guess){
 
 }
 
-guess(["a",1])
-guess(["a",2])
+guess(["A",1])
+guess(["B",2])
 
 
 
