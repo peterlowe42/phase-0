@@ -4,8 +4,8 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-# 
-#
+#  Require relative references another .rb file in the same directory as the file in which it is called. It allows this file to use variables and methods defined in the referenced file.
+# It differs from require in that it must reference a file in the same directory. 
 require_relative 'state_data'
 
 class VirusPredictor
@@ -94,3 +94,19 @@ end
 
 #=======================================================================
 # Reflection Section
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+#   The two syntaxes do the same thing in slightly dirrernt ways.  The state name key points to it's value by using the '=>' syntax wheres within the nested hash 
+# The keys are symbols seperated from their values by a : .  The second method can only be used with symbols as keys. 
+
+# What does require_relative do? How is it different from require?
+# Require relative references another .rb file in the same directory as the file in which it is called. It allows this file to use variables and methods defined in the referenced file.
+# It differs from require in that it must reference a file in the same directory.
+
+# What are some ways to iterate through a hash?
+# the simplist way is to use .each but you could also use other methods such as map or a loop. 
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+#   The instance variables where repeated alot.  In some cases this repetition was not required so we removed them. 
+
+# What concept did you most solidify in this challenge?
+#  The biggest thing that was solidified was the use of classes and instance variables. It also provided a useful review of iterating over hashes. 
