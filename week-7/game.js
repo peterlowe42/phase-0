@@ -42,25 +42,22 @@ var board = {
 }
 
 var small_ship = {
-<<<<<<< HEAD
+
 	pos:[["a",1],["a",2]],
-=======
-	pos:[["A",1],["B",2]],
->>>>>>> ce557a49cd2dc9a19e30879cbef9c7cfcd0b9571
+
+	
+
 	hit_count:0,
 	sunk: false,
 }
 
 var big_ship = {
-<<<<<<< HEAD
+
 	pos:[["b",3],["c",3],["d",3]],
 	hit_count: 0,
 	sunk: false,
-=======
-	pos:[['B',3],['C',3],['D',3]],
-	hit_count:0,
-	sunk:false,
->>>>>>> ce557a49cd2dc9a19e30879cbef9c7cfcd0b9571
+
+
 }
 
 function print_board(board){
@@ -70,14 +67,10 @@ function print_board(board){
 print_board(board)
 
 function guess(guess){
-<<<<<<< HEAD
+
 	
 	if ((guess[0] == small_ship["pos"][0][0] && guess[1] == small_ship["pos"][0][1]) || (guess[0] == small_ship["pos"][1][0] && guess[1] == small_ship["pos"][1][1])){
-=======
-	console.log(small_ship["pos"])
-	if (small_ship["pos"].includes(guess));{
->>>>>>> ce557a49cd2dc9a19e30879cbef9c7cfcd0b9571
-		console.log("Hit!");
+	    console.log("Hit!");
 		small_ship["hit_count"] ++;
 	    board[guess[0]][guess[1]] = "X";
 	    print_board(board)
@@ -97,7 +90,7 @@ function guess(guess){
 	    }
     }
     else {
-    	console.log("Miss!")
+     	console.log("Miss!")
     	board[guess[0]][guess[1]] = "M";
 	    print_board(board)
     }
@@ -107,18 +100,16 @@ function guess(guess){
 
 }
 
-<<<<<<< HEAD
 guess(["a",1])
 guess(["a",2])
 guess(["e",6])
 guess(["b",3])
 guess(["c",3])
 guess(["d",3])
-=======
-guess(["A",1])
-guess(["B",2])
 
->>>>>>> ce557a49cd2dc9a19e30879cbef9c7cfcd0b9571
+
+
+
 
 
 
