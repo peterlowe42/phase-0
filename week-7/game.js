@@ -42,15 +42,22 @@ var board = {
 }
 
 var small_ship = {
-	pos:[["A",1],["B",2]],
+
+	pos:[["a",1],["a",2]],
+
+	
+
 	hit_count:0,
 	sunk: false,
 }
 
 var big_ship = {
-	pos:[['B',3],['C',3],['D',3]],
-	hit_count:0,
-	sunk:false,
+
+	pos:[["b",3],["c",3],["d",3]],
+	hit_count: 0,
+	sunk: false,
+
+
 }
 
 function print_board(board){
@@ -60,25 +67,48 @@ function print_board(board){
 print_board(board)
 
 function guess(guess){
-	console.log(small_ship["pos"])
-	if (small_ship["pos"].includes(guess));{
-		console.log("Hit!");
+
+	
+	if ((guess[0] == small_ship["pos"][0][0] && guess[1] == small_ship["pos"][0][1]) || (guess[0] == small_ship["pos"][1][0] && guess[1] == small_ship["pos"][1][1])){
+	    console.log("Hit!");
 		small_ship["hit_count"] ++;
 	    board[guess[0]][guess[1]] = "X";
-	    console.log(board);
+	    print_board(board)
       if (small_ship["hit_count"] == 2){
     	small_ship["sunk"] = true;
     	console.log("You sunk a battle ship!!")}
-
-    }  
-    if (guess == big_ship["bow"] || guess == big_ship["mid"]|| guess == big_ship["stern"]){
-    	
+    } 
+    else if ((guess[0] == big_ship["pos"][0][0] && guess[1] == big_ship["pos"][0][1]) || (guess[0] == big_ship["pos"][1][0] && guess[1] == big_ship["pos"][1][1]) 
+    	|| (guess[0] == big_ship["pos"][2][0] && guess[1] == big_ship["pos"][2][1])){
+    	console.log("Hit!");
+		big_ship["hit_count"] ++;
+	    board[guess[0]][guess[1]] = "X";
+	    print_board(board)
+	    if (big_ship["hit_count"] == 3){
+	    	big_ship["sunk"] = true
+	    	console.log("You sunk a battle ship!!")
+	    }
     }
+    else {
+     	console.log("Miss!")
+    	board[guess[0]][guess[1]] = "M";
+	    print_board(board)
+    }
+
+    if (small_ship.sunk == true && big_ship.sunk == true) 
+    	console.log("You Win!!!!")
 
 }
 
-guess(["A",1])
-guess(["B",2])
+guess(["a",1])
+guess(["a",2])
+guess(["e",6])
+guess(["b",3])
+guess(["c",3])
+guess(["d",3])
+
+
+
 
 
 
@@ -92,11 +122,29 @@ guess(["B",2])
 
 
 // Reflection
+//What was the most difficult part of this challenge?
+//    Every part of this challenge was difficult for me. You'll notice that the solution is much more simple than what I envisoned at the Pseudocode stage.  I set out to 
+//    create somthing that I thought would be relatively simple but ended up hitting walls at every stage. Firstly dispite hours of experimenting and researching I could not 
+//    get javascript to agree that two arrays were equal which is why I ended up with the extemly cumbersome if statements that compare each individual element of 'guess'
+//    with each element of 'pos'.  I then spent an hour trying to figure out why I was getting "unexpected token 'else'" only to discover it was because i'd inserted an extra ;. 
+//    I then spent a very long time researching how to get javascript to accept user input from the command line but could not make it work.  Eventually i deceded that although it was 
+//    not what I wanted the code I have here does at least work to some degree and I'd already spent FAR to long on this problem. 
+
+// What did you learn about creating objects and functions that interact with one another?
+
+//   At this point i'm really not sure. 
+
+// Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+
+//   I tryied to use .includes to see if 'pos' included guess but I was repeatedly told that .includes is not a function. 
+
+// How can you access and manipulate properties of objects?
+
+//   Properties can be accesses by object_name["property_name"] or object_name.property_name.
 //
 //
 //
-//
-//
+//  I hope to come back to this exercise and complete my game at a later stage but for now I just can't take any more JavaScript. 
 //
 //
 //
