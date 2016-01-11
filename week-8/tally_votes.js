@@ -63,19 +63,73 @@ var officers = {
 }
 
 // Pseudocode
-
+// create a function called "tallyVotes" that iterates through the objects in "votes".
+// it should add a property to each of the objects in "voteCount" that is equal to each person's name
+// loop through everyone's votes and add one to namepresident each time it finds one and do that for every position.
+// make a function that assigns the positions that finds the person with the highest vote count for each position and make them the winner.
 
 // __________________________________________
 // Initial Solution
+//  function tallyVotes(votes){
+//   for (var name in votes){
+//     voteCount.president[name] = 0
+//     voteCount.vicePresident[name] = 0
+//     voteCount.secretary[name] = 0
+//     voteCount.treasurer[name] = 0
+//   }
+//    for (var name in votes){
+//     voteCount.president[votes[name]["president"]] += 1
+//     voteCount.vicePresident[votes[name]["vicePresident"]] += 1
+//     voteCount.secretary[votes[name]["secretary"]] += 1
+//     voteCount.treasurer[votes[name]["treasurer"]] += 1
+//    }
+//  }
 
+// tallyVotes(votes)
 
-
+// console.log(voteCount)
 
 
 
 
 // __________________________________________
 // Refactored Solution
+function tallyVotes(votes){
+  for (var name in votes){
+    voteCount.president[name] = 0
+    voteCount.vicePresident[name] = 0
+    voteCount.secretary[name] = 0
+    voteCount.treasurer[name] = 0
+  }
+   for (var name in votes){
+    voteCount.president[votes[name]["president"]] += 1
+    voteCount.vicePresident[votes[name]["vicePresident"]] += 1
+    voteCount.secretary[votes[name]["secretary"]] += 1
+    voteCount.treasurer[votes[name]["treasurer"]] += 1
+   }
+ }
+
+
+ function assign_officers(officers){
+  for (var key in officers){
+    var max = 0;
+      for (var name in voteCount[key]){
+      if (voteCount[key][name] > max){
+        max = voteCount[key][name];
+       officers[key] = name;
+     }
+  }
+  }
+}
+
+tallyVotes(votes)
+assign_officers(officers)
+
+ 
+
+
+
+
 
 
 
