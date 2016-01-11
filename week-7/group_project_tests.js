@@ -1,6 +1,6 @@
 // Add the finished solution here when you receive it.
 //var SUM = function (ARRAY){
-      function sum(ARRAY){
+    function sum(ARRAY){
       var TOTAL = 0
       for (var i = 0; i < ARRAY.length; i++){
         TOTAL += ARRAY[i]
@@ -20,8 +20,8 @@
         return ((ARRAY[PLACE] + ARRAY[PLACE -1])/2)
       else 
         return ARRAY[PLACE]
-    }
- //    __________________________________________
+    
+} //    __________________________________________
 // Tests:  Do not alter code below this line.
 
 
