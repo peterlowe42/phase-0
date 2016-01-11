@@ -22,30 +22,30 @@ var scores = [ [80, 70, 70, 100],
 
 // __________________________________________
 // Write your code below.
-var gradebook = {
-  Joseph: {testScores: [80, 70, 70, 100]},
-  Susan: {testScores: [85, 80, 90, 90]},
-  William: {testScores: [75, 70, 80, 75]},
-  Elizabeth: {testScores: [100, 90, 95, 85]},
-  addScore: function(name, score){
-      gradebook[name]["testScores"].push(score)
-      },
-  getAverage: function(name){
+// var gradebook = {
+//   Joseph: {testScores: [80, 70, 70, 100]},
+//   Susan: {testScores: [85, 80, 90, 90]},
+//   William: {testScores: [75, 70, 80, 75]},
+//   Elizabeth: {testScores: [100, 90, 95, 85]},
+//   addScore: function(name, score){
+//       gradebook[name]["testScores"].push(score)
+//       },
+//   getAverage: function(name){
    
-    return average(gradebook[name]["testScores"])
-  }
+//     return average(gradebook[name]["testScores"])
+//   }
   
-}
+// }
 
-function average(array) {
-  var sum = 0;
-  for (var i = 0; i < array.length; i++){
-    sum += array[i]
-  }
+// function average(array) {
+//   var sum = 0;
+//   for (var i = 0; i < array.length; i++){
+//     sum += array[i]
+//   }
  
-  var avg = sum/array.length;
-  return avg;
-}
+//   var avg = sum/array.length;
+//   return avg;
+// }
 
 // console.log(gradebook.Joseph.testScores)
 // gradebook.addScore("Joseph", 70)
