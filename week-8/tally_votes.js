@@ -138,6 +138,16 @@ assign_officers(officers)
 
 // __________________________________________
 // Reflection
+// What did you learn about iterating over nested objects in JavaScript?
+//    It's a lot more tedious than in Ruby!! We eventually got it fiured out atfer a very long time of hitting error messages and strange unexpected outputs. I think the key to
+//    getting it right is having all the property names clear in your head and making sure you use the bracket notation where approprite. The biggest problem we had was the problem 
+//    that I keep running into in javaScript that the error messages are realy unhelpful. Alot of the time it won't even tell you what line the error is on!
+
+// Were you able to find useful methods to help you with this?
+//    By the time we got the loop working there wasn't time to look for new methods so we just left it as it was.  
+
+// What concepts were solidified in the process of working through this challenge?
+//    That JavaScript is a fickle creature. 
 
 
 
